@@ -1,0 +1,768 @@
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+  
+body {
+font-family: "Roboto condensed", sans-serif;
+}
+
+html {
+height: 100%;
+scroll-behavior: smooth;
+font-size: 16px;
+background-color: #1a1a1a;
+color: #ffffff
+}
+    
+  /*HEADER*/
+
+header {
+position: fixed; /*Fija el encabezado en la parte superior*/
+top: 0; /* Asegura que el encabezado esté en la parte superior */
+left: 0; /* Asegura que el encabezado esté alineado a la izquierda */
+padding: 20px; /* Espaciado interno de la cabecera */
+background-color: black;
+color: white;
+width: 100%;
+z-index: 1000; /* Asegura que la cabecera esté por encima de otros elementos */
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: auto; /* Ancho máximo de la cabecera */
+margin: 0 auto; /* Centrar la cabecera horizontalmente */
+padding: 0 20px; /* Espacio interior a los lados */
+background-color: black;
+}
+
+.logo-header {
+flex: 1; /* El logo ocupará una porción fija */
+display: flex;
+align-items: center;
+}
+
+.logo-header img {
+height: 50px;
+max-width: 150px;   
+}
+
+.nav-menu {
+flex: 2; /* El menú principal ocupará el doble del espacio */
+display: flex;
+justify-content: center; /* Centra el menú de navegación */
+}
+
+.menu {
+list-style: none;
+display: flex;
+align-items: center;
+}
+        
+.item a {
+text-decoration: none; /* Eliminar subrayado de enlaces */
+color: #f1f1f1; /* Color del texto */
+font-weight: 550; /* Grosor de fuente */
+margin: 0 15px;
+text-transform: uppercase;
+}
+
+.item a:hover {
+color: #ff5722; 
+}
+
+.separator {
+color: #ee9191; /* Color del separador */
+margin: 15px;
+}
+        
+.social {
+display: flex;
+align-items: center;
+list-style: none; /* Eliminar puntos de lista */
+padding: 0; /* Eliminar padding */
+margin: 0; /* Eliminar margen */
+}
+
+.social li {
+margin: 0 10px; /* Espacio entre los íconos sociales */
+}
+    
+.social a {
+color: #f1f1f1; /* Color de los íconos */
+transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+    
+/* Ajustar íconos de redes sociales */
+.social svg {
+height: 24px; /* Altura de los íconos */
+width: 24px; /* Ancho de los íconos */
+fill: currentColor;
+transition: transform 0.3s ease, color 0.3s ease;
+}
+
+        .lupa svg:hover {
+        color: #ff5722; 
+        }
+
+        .first-li svg:hover {
+        fill: blue;
+        }
+             
+        .second-lid svg:hover {
+        fill: rgb(255, 0, 119)
+        }
+          
+        .third-lid svg:hover {
+        fill: rgb(51, 197, 238)
+        }
+            
+        .fourth-lid svg:hover {
+        fill: red;
+        }
+    
+    /*MAIN*/
+    
+/*Parte principal*/
+    
+.central {
+position: relative; /* Permite posicionar elementos hijos */
+width: 100%;
+height: 180px; /* Ajusta la altura según lo que necesites */
+color: white; /* Color del texto */
+margin-bottom: 100px;
+display: flex; /* Usamos flexbox para alinear elementos */
+}
+    
+.poster {
+position: relative; /* Para que los elementos hijos puedan posicionarse en relación a este */
+width: 100%;
+height: 100%; /* Asegura que el div de poster tome toda la altura del contenedor */
+margin-bottom: 20px;
+}
+    
+.poster img {
+width: 100%;
+height: auto; 
+}
+
+.movie-title {
+position: absolute; 
+top: 470%; 
+left: 30%; 
+transform: translate(-50%, -50%); 
+display: flex;
+align-items: center; 
+z-index: 2; 
+white-space: nowrap;
+}
+
+.movie-title img {
+margin-right: 25px; 
+}
+
+h1 {
+font-size: 25px; 
+text-transform: uppercase;
+margin-right: 5px;
+margin-left: 15px;
+}
+
+p {
+color: rgba(177, 175, 175, 0.822); 
+font-size: 20px;  
+margin: 25px;
+}
+
+h2 {
+color: rgba(177, 175, 175, 0.822); 
+font-size: 18px;  
+}
+    
+.certification {
+display: flex;
+align-items: center;
+border: solid 1px #fff;
+font-size: 10px;
+padding: 5px 8px;
+border-radius: 5px;
+margin-top: 10px;
+margin:  0 20px;
+cursor: pointer;
+}
+
+.stars {
+display: flex;
+justify-content: center;
+}
+
+#stars img {
+padding: 10px;
+width: 180px; 
+height: 100px; 
+object-fit: contain; 
+}
+
+#stats {
+display: flex;
+justify-content: center;  /* Centrar todo el contenedor */
+list-style: none;  /* Quitar los puntos de la lista */
+padding: 0;  
+}
+    
+#stats li {
+margin: 0;
+color: rgba(177, 175, 175, 0.822);
+text-align: center;
+margin-top: 20px;
+}
+    
+#stats .score {
+font-size: 24px;  
+font-weight: bold;  /* Poner en negrita */
+margin-top: 10px;
+margin-right: 50px;
+}
+    
+#stats .rating-votes {
+display: flex;
+align-items: center;  /* Alinear el contenido al centro */
+color: #fff;
+margin-top: 0;
+}
+   
+#stats .rating {
+font-size: 14px;
+margin: 20px 5px;
+}
+    
+#stats .votes {
+font-size: 14px;
+ 
+}          
+ 
+/*Reparto*/
+
+.columns {
+display: flex;
+justify-content: space-between; /* Separa las columnas */
+width: 100%;
+position: relative;
+padding: 20px; /* Ajusta según sea necesario */
+}
+
+.left-column {
+width: 35%; 
+float: left; /* Alinea la columna a la izquierda */
+margin-top: 40%;
+
+}
+    
+.left-column h2 {
+text-align: center;
+margin-bottom: 10px; 
+font-size: 20px;
+}
+    
+.left-column dl {
+margin: 0; 
+padding: 0; 
+display: grid; /* Usa grid para distribuir en 2 columnas */
+grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+gap: 5px;
+}
+
+.left-column dt, .left-column dd {
+text-align: center;
+width: 70%;
+}
+    
+.left-column dt {
+display: flex; 
+flex-direction: column;
+align-items: center; 
+font-size: 16px;
+margin: 0;
+}
+
+.left-column dd {
+margin: 5px 0 10px 0;
+color: rgba(150, 146, 146, 0.822);
+font-size: 16px;
+flex-direction: column;
+}
+    
+.left-column img {
+height: 150px; 
+margin-bottom: 10px;
+margin-top: 10px; 
+border-radius: 20%;
+}
+    
+.left-column span {
+font-weight: bold; 
+text-align: left;
+}    
+
+/*Descripción película*/
+    
+.central-column {
+width: 70%; 
+max-width: 800px; 
+padding: 20px; 
+background-color: #fff; 
+border-radius: 8px; 
+margin-top: 40%; 
+}
+    
+.movie-info {
+margin: 0; 
+padding: 0; 
+}
+    
+.movie-info dt {
+font-weight: bold; 
+font-size: 18px; 
+color: #6b6a6a; 
+margin-top: 15px; 
+}
+    
+.movie-info dd {
+margin: 5px 0 15px 0; 
+color: rgba(150, 146, 146, 0.822); 
+font-size: 16px; 
+line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+   
+.ranking, .prize {
+margin: 0; 
+padding: 0; 
+}
+.ranking dt, .prize dt {
+font-weight: bold; 
+font-size: 18px; 
+color: #6b6a6a; 
+margin-top: 15px; 
+}
+
+.ranking dd, .prize dd {
+margin: 5px 0 15px 0; 
+color: rgba(150, 146, 146, 0.822); 
+font-size: 16px; 
+line-height: 1.5;
+} 
+
+/*Trailers*/
+
+/*RRSS*/
+
+.right-column {
+width: 25%; 
+float: right; /* Alinea la columna a la izquierda */
+margin-left: 80px;
+margin-top: 40%;
+}
+
+.social-right {
+display: flex; 
+flex-direction: column;
+align-items: flex-start; 
+font-size: 16px;
+}
+
+.social-column {
+align-items: left;
+list-style: none; /* Eliminar puntos de lista */
+}
+
+.social-column li {
+margin-bottom: 15px; /* Añadir espacio entre los ítems de la lista */
+}
+
+.social-right a {
+font-size: 14px;
+display: flex;
+font-weight: bold;
+align-items: center;
+text-decoration: none; 
+height: 27px;
+width: 111px;
+text-align: center;
+color: white;
+}
+
+.facebook {
+background-color: blue;
+border-radius: 4px;
+}
+
+.instagram {
+background-color: rgb(255, 0, 119);  
+border-radius: 4px;
+}
+
+.twitter {
+background-color: rgb(51, 197, 238);  
+border-radius: 4px;
+}
+
+
+/*Recent news*/
+
+
+.aside {
+display: block;
+unicode-bidi: isolate;
+box-sizing: border-box;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+  
+.aside .title  {
+font-size: 17px;
+margin-block-end: 32px;
+text-transform: uppercase;
+font-weight: bold; 
+width: auto;
+height: auto;
+margin-bottom: 10px;
+}
+  
+.aside .item {
+display: flex;
+gap: 18px;
+}
+  
+.aside .item-title  {
+font-size: 16px;
+font-weight: bold;
+box-sizing: border-box;
+}
+   
+.aside .item-date  {
+color: #a8a8a8;
+font-size: 11px;
+text-transform: uppercase; 
+}
+  
+.aside .list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+    
+.item p {
+font-size: 15px;
+color: #fff;
+margin-top: 0;
+}    
+
+.trailer {
+margin-top: 20px; 
+padding: 15px; 
+border-radius: 8px; 
+}
+
+.trailer h2 {
+font-size: 16px; 
+text-align: center;
+font-weight: bold; 
+margin-bottom: 20px; 
+color: #f37171;
+
+}
+
+.trailer h3 {
+font-size: 20px; 
+font-weight: blond; 
+color: #f30707; 
+text-align: center;
+}
+
+.trailer p {
+font-size: 16px; 
+color: #f5f3f3; 
+text-align: center;
+}
+
+.trailer img {
+max-width: 100%; 
+height: auto; 
+border-radius: 8px; 
+}
+
+ 
+/*Votación*/
+
+.rating {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+}
+
+.stars {
+display: flex;
+cursor: pointer;
+}
+
+.star {
+display: flex;
+align-items: center; 
+font-size: 20px; 
+color: #fff; 
+transition: color 0.3s;
+margin: 0 5px; 
+}
+
+.rating h2 {
+color: #fff;
+margin-bottom: 10px;  
+}
+
+.rating p {
+color: #fff;  
+}
+
+
+.star:hover,
+.star:hover ~ .star {
+color: #ffcc00; 
+}
+
+.star:hover svg {
+fill: #ffcc00; 
+}
+
+.star.selected {
+color: #ff8800; 
+}
+
+.star.selected svg {
+fill:  #ff8800; 
+}
+
+.selected-rating {
+margin-top: 10px;
+font-size: 18px; 
+}
+
+/*FOOTER*/
+
+ 
+footer {
+background-color: black;
+color: #fff; /* Color del texto */
+padding: 70px; /* Espaciado alrededor del footer */
+width: 70%;
+align-items: center;
+margin: 0 auto;
+display: flex;
+}
+  
+.footer-content {
+display: flex; 
+flex-wrap: wrap; /* Permitir que las columnas se ajusten si el espacio es pequeño */
+padding: 0;
+margin: 0 10px;
+flex: 1; 
+gap: 50px; 
+}
+  
+.footer-content div {
+flex: 1 1 200px;
+margin: 10px;
+}
+  
+.footer h3 {
+display: inline-block; /* Permite que el pseudo-elemento se alinee correctamente */
+position: relative;    /* Para posicionar el pseudo-elemento */
+margin: 0;            /* Elimina el margen predeterminado */
+padding-right: 25px;  /* Espacio entre el texto y la línea */
+}
+  
+.logo-end {
+text-align: left;
+}
+  
+.logo {
+display: flex;
+align-items: left;
+justify-content: space-between;
+flex-direction: column  
+}
+  
+.logo-end p {
+font-size: 12px;  
+color: #a8a8a8;  
+margin-top: 10px;
+}
+  
+.movies, .additional, .newsletter {
+text-align: left;
+}
+  
+h3 {
+font-size: 1.2rem;
+margin-bottom: 15px;
+color: #ffffff;
+text-transform: uppercase;
+}
+  
+ul {
+list-style: none;
+padding: 0;
+}
+  
+ul li {
+margin-bottom: 10px;
+}
+  
+ul li a {
+color: #b1b1b1;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+  
+ul li a:hover {
+color: #ffffff;
+}
+ 
+.movies  h3::after {
+content: "";
+display: inline-block; /* Se asegura de que se alinee horizontalmente */
+width: 20px;          /* Ajusta el ancho de la línea */
+height: 2px;          /* Grosor de la línea */
+background-color: red;/* Color de la línea */
+right: 0;              /* Alinea la línea a la derecha del h3 */
+top: 50%;              /* Centra verticalmente en el medio del h3 */
+transform: translateY(-50%); /* Ajusta la posición vertical de la línea */
+padding-left: 25px;
+}
+  
+.additional  h3::after {
+content: "";
+display: inline-block; /* Se asegura de que se alinee horizontalmente */
+width: 20px;          /* Ajusta el ancho de la línea */
+height: 2px;          /* Grosor de la línea */
+background-color: red;/* Color de la línea */
+right: 0;              /* Alinea la línea a la derecha del h3 */
+top: 50%;              /* Centra verticalmente en el medio del h3 */
+transform: translateY(-50%); /* Ajusta la posición vertical de la línea */
+padding-left: 25px;
+}
+  
+.newsletter h3::after {
+content: "";
+display: inline-block; /* Se asegura de que se alinee horizontalmente */
+width: 20px;          /* Ajusta el ancho de la línea */
+height: 2px;          /* Grosor de la línea */
+background-color: red;/* Color de la línea */
+right: 0;              /* Alinea la línea a la derecha del h3 */
+top: 50%;              /* Centra verticalmente en el medio del h3 */
+transform: translateY(-50%); /* Ajusta la posición vertical de la línea */
+padding-left: 25px;
+}
+  
+.newsletter {
+align-items: center;
+justify-content: space-between;
+margin-top: 30px;
+display: block; 
+}
+  
+.newsletter ul {
+padding: 0;
+list-style: none;
+}
+  
+.newsletter ul li {
+margin-bottom: 8px;
+}
+ 
+.newsletter ul li a {
+color: #a8a8a8; 
+}
+  
+.newsletter ul li a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+  
+.icons-end {
+position: relative; /* Permite el posicionamiento absoluto del pseudo-elemento */
+margin-bottom: 20px; /* Espacio entre la línea y los iconos */
+padding-top: 10px; /* Espacio entre la línea y el texto o la parte superior */
+}
+  
+.icons-end ul {
+padding-top: 15px; /* Espacio entre la línea y los iconos */
+margin: 0; /* Elimina márgenes predeterminados de la lista */
+}
+
+.icons-end a {
+margin: 0 10px;
+display: inline-block;
+}
+  
+.icons-end svg {
+width: 30px;
+height: 30px;
+fill: currentColor;
+transition: transform 0.3s ease, color 0.3s ease;
+}
+  
+.icons-end::before {
+content: "";
+display: block; 
+width: 300px;   /* Ajusta el ancho de la línea */
+height: 1px;    /* Grosor de la línea */
+background-color: rgba(182, 180, 180, 0.61);   /* Color de la línea */
+position: absolute;
+margin-bottom: 15%;
+top: 0;
+}
+  
+.icons-end a:hover svg {
+transform: scale(1.2);
+color: #49e5ff; /* Color al hacer hover */
+}
+  
+  .icons-end a[title="X"] svg {
+      fill: #49e5ff;
+  }
+  
+  .icons-end a[title="Facebook"] svg {
+      fill: #1209eb;
+  }
+  
+  .icons-end a[title="Instagram"] svg {
+      fill: #f010e9;
+  }
+  
+  .icons-end a[title="YouTube"] svg {
+      fill: #f20000;
+  }
+  .icons-end a:hover {
+  transform: scale(1.1); /* Efecto de escalado al pasar el ratón */
+  }
+  
+  @media (max-width: 768px) {
+      .footer-content {
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .footer-content div {
+          margin-bottom: 20px;
+      }
+  
+      .icons-end {
+          margin-top: 10px;
+      }
+  }
+  
