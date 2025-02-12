@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST OF FILMS</title>
+    <link href="lista.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://font.googleapis.com" />
+    <link rel="preconnect" href="https://font.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Concensed&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>  
+    <header>
+        <div class="header">
+                <a href="">
+                <img src="img/logo.png" alt="" class="logo" />
+                </a>    
+            <nav class="nav">
+                <ul class="flex menu">
+                    <li class="item"><a href="">Home</a></li>
+                
+                 <li><span class="separator">/</span></li>
+                
+                    <li class="item"><a href="">Features</a></li>
+                
+                    <li><span class="separator">/</span></li>
+                
+                    <li class="item"><a href="">About</a></li>
+                
+                    <li><span class="separator">/</span></li>
+                
+                    <li class="item"><a href="">News</a></li>
+                
+                    <li><span class="separator">/</span></li>
+                
+                    <li class="item"><a href="">Contacts</a></li>
+                </ul>
+            </nav>     
+            <nav class="nav">
+                <ul class="social">
+                    <li class="first-li"><a href="https://www.facebook.com/Codespaceacademy" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24px" height="24px"><path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z" /></svg></a></li>
+                    <li class="second-lid"><a href="https://www.instagram.com/codespaceacademy/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24px" height="24px"><path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z" /></svg></a></li>
+                    <li class="third-lid"><a href="https://x.com/CodeSpaceAcade" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"/></svg></a></li>
+                    <li class="fourth-lid"><a href="https://www.youtube.com/channel/UCShIfwOX_JfziVBJoSM6zMQ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24px" height="24px"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z" /></svg></a></li>
+                </ul>
+            </nav>
+            
+            <button id="toggle-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -800 960 960" width="40" height="40">
+                    <path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/>
+                </svg>
+            </button>
+            
+            <div class="search_cont">
+                <input type="text" placeholder="Search...">
+            </div>
+            
+            <nav class="sort_cont">
+                <ul class="sort">
+                    <li>
+                        <a href="#" class="order-toggle">Order</a>
+                        <ul class="sort_type">
+                            <li><a href="#" class="sort-list">Title (A-Z)</a></li>
+                            <li><a href="#" class="sort-list">Title (Z-A)</a></li>
+                            <li><a href="#" class="sort-list">Year <i class="fa-solid fa-arrow-up-long"></i></a></li>
+                            <li><a href="#" class="sort-list">Year <i class="fa-solid fa-arrow-down"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+    
+            <nav class="category">
+                <ul class="menu_ul">
+                    <li><a href="#">Category</a>
+                        <ul class="type">
+                            <li><a href="#" class="category-link" data-category="Action">Action</a></li>
+                            <li><a href="#" class="category-link" data-category="Animation">Animation</a></li>
+                            <li><a href="#" class="category-link" data-category="Adventure">Adventure</a></li>
+                            <li><a href="#" class="category-link" data-category="Fiction">Fiction</a></li>
+                            <li><a href="#" class="category-link" data-category="Comedy">Comedy</a></li>
+                            <li><a href="#" class="category-link" data-category="Drama">Drama</a></li>
+                            <li><a href="#" class="category-link" data-category="Fantasy">Fantasy</a></li>
+                            <li><a href="#" class="category-link" data-category="Thriller">Thriller</a></li>
+                            <li><a href="#" class="category-link" data-category="Terror">Terror</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+            </nav>
+            <div id="modal"></div>
+           
+        </div>  
+    </header>
+    <main>
+    
+                
+        <section class="grid">
+            <div class="grid-item">
+                <img src="img/sonic.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">Sonic 3: The Hedgehog</h2>
+                    <div class="details">
+                        <h3 class="text">Action</h3>
+                        <p class="score">6.1</p>
+                        <p class="year">2025</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item">
+                <img src="img/moana_2.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">Moana 2</h2>
+                    <div class="details">
+                        <h3 class="text">Animation</h3>
+                        <p class="score">5.7</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item">
+                <img src="img/Oppenheimer.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">Oppenhgeimer</h2>
+                    <div class="details">
+                        <h3 class="text">Drama</h3>
+                        <p class="score">7.4</p>
+                        <p class="year">2023</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item">
+                <img src="img/la_infiltrada.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">The infiltrator</h2>
+                    <div class="details">
+                        <h3 class="text">Thriller</h3>
+                        <p class="score">7.2</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item">
+                <img src="img/dune.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">Dune: Part Two</h2>
+                    <div class="details">
+                        <h3 class="text">Fiction</h3>
+                        <p class="score">7.7</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item">
+                <img src="img/la_sustancia.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">The substance</h2>
+                    <div class="details">
+                        <h3 class="text">Fiction</h3>
+                        <p class="score">6.9</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item">
+                <img src="img/deadpool_and_wolverine.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">Deadpool & Wolverine</h2>
+                    <div class="details">
+                        <h3 class="text">Action</h3>
+                        <p class="score">6.7</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item">
+                <img src="img/mufasa.jpg" alt="" class="item-img" />
+                <div class="column-information">
+                    <h2 class="title">Mufasa: The Lion King</h2>
+                    <div class="details">
+                        <h3 class="text">Animation</h3>
+                        <p class="score">6.3</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/den_of_thieves_2_pantera.jpg" alt="den_of_thieves_2_pantera" class="item-img">
+                <div class="column-information">
+                    <h2 class="title">Den of thieves 2: Pantera</h2>
+                    <div class="details">
+                        <h3 class="text">Thriller</h3>
+                        <p class="score">5.7</p>
+                        <p class="year">2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/attack-on-titan.jpg" alt="attack-on-titan" class="item-img">
+                <div class="column-information">
+                    <h2 class="title">Attack on Titan: The Last Attack</h2>
+                    <div class="details">
+                        <h3 class="text">Animation</h3>
+                        <p class="score">7.7</p>
+                        <p class="year">2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/spider-man-no-way-home.jpg" alt="spider-man-no-way-home" class="item-img">
+                <div class="column-information">
+                    <h2 class="title">Spider-Man: No Way Home</h2>
+                    <div class="details">    
+                        <h3 class="text">Fantasy</h3>
+                        <p class="score">7.0</p>
+                        <p class="year">2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/super-mario-bros.jpg" alt="super-mario-bros" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Super Mario Bros: Movie</h2>
+                    <div class="details">
+                        <h3 class="text">Animation</h3>
+                        <p class="score">6.6</p>
+                        <p class="year">2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/bravenewworld.jpg" alt="bravenewworld" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Captain America: Brave New World</h2>
+                    <div class="details">
+                        <h3 class="text">Action</h3>
+                        <p class="score"><i class="fa-solid fa-hourglass-start"></i></p>
+                        <p class="year">2025</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="img/flight_risk.jpg" alt="flight_risk" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Flight Risk</h2>
+                    <div class="details">
+                        <h3 class="text">Thriller</h3>
+                        <p class="score"><i class="fa-solid fa-hourglass-start"></i></p>
+                        <p class="year">2025</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="img/sinners.jpg" alt="sinners" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Sinners</h2>
+                    <div class="details">
+                        <h3 class="text">Terror</h3>
+                        <p class="score"><i class="fa-solid fa-hourglass-start"></i></p>
+                        <p class="year">2025</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="img/mikaela.jpg" alt="mikaela" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Mikaela</h2>
+                    <div class="details">
+                        <h3 class="text">Thriller</h3>
+                        <p class="score">5.1</p>
+                        <p class="year">2025</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="img/red_notice.jpg" alt="red_notice" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Red Notice</h2>
+                    <div class="details">
+                        <h3 class="text">Comedy</h3>
+                        <p class="score">5.3</p>
+                        <p class="year">2021</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="img/aquaman.jpg" alt="aquaman" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Aquaman: And the lost kingdom</h2>
+                    <div class="details">
+                        <h3 class="text">Adventure</h3>
+                        <p class="score">4.8</p>
+                        <p class="year">2023</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <img src="img/army.jpg" alt="army" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Army of the dead</h2>
+                    <div class="details">
+                        <h3 class="text">Terror</h3>
+                        <p class="score">4.9</i></p>
+                        <p class="year">2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/adu.jpg" alt="adu" class="item-img">
+                <div class="column-information">
+                <h2 class="title">Adu</h2>
+                    <div class="details">
+                        <h3 class="text">Drama</h3>
+                        <p class="score">6.2</i></p>
+                        <p class="year">2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="list hidden">
+        <div class="search_container">
+            <div class="list-item">
+                <img src="img/sonic.jpg" alt="sonic" class="list-img">
+                <h2 class="heading">Sonic 3: The Hedgehog</h2>
+                <h3 class="genre">Action</h3>
+                <p class="sinopsis">Sonic, Knuckles and Tails reunite to face a powerful new adversary, Shadow, a mysterious villain whose powers are unlike anything our heroes have ever encountered. With their powers surpassed in every way, Sonic Team will have to form an unlikely alliance in hopes of stopping Shadow and protecting the planet.</p>
+                <p class="rating">6.1</p>
+                <p class="year">2025</p>
+            </div>
+
+            <div class="list-item">
+                <img src="img/moana_2.jpg" alt="moana_2" class="list-img">
+                <h2 class="heading">Moana 2</h2>
+                <h3 class="genre">Animation</h3>
+                <p class="sinopsis">After receiving an unexpected call from her ancestors, Vaiana must travel to the far seas of Oceania and into dangerous lost waters for an unprecedented adventure.</p>
+                <p class="rating">5.7</p>
+                <p class="year">2024</p>
+            </div>
+            
+            <div class="list-item">
+                <img src="img/Oppenheimer.jpg" alt="robot_salvaje" class="list-img">
+                <h2 class="heading">Oppenhgeimer</h2>
+                <h3 class="genre">Drama</h3>
+                <p class="sinopsis">In wartime, the brilliant American physicist Julius Robert Oppenheimer, at the head of the ‘Manhattan Project’, leads nuclear tests to build the atomic bomb for his country. Shocked by its destructive power, Oppenheimer questions the moral consequences of his creation. From then on, and for the rest of his life, he would firmly oppose the use of nuclear weapons. </p>
+                <p class="rating">7.4</p>
+                <p class="year">2023</p>
+            </div>
+
+            <div class="list-item">
+                <img src="img/la_infiltrada.jpg" alt="la_infiltrada" class="list-img">
+                <h2 class="heading">The infiltrator</h2>
+                <h3 class="genre">Thriller</h3>
+                <p class="sinopsis">Based on the true story of Aranzazu Berradre Marín, a National Police agent who infiltrated ETA for 8 years. At the age of 20, she became the only woman to live with ETA leaders to dismantle a key commando. During her mission, she cut all family ties, risking her life to prevent an attack when the terrorist group declared a false truce. The story of a brave woman who changed her life to save others.</p>
+                <p class="rating">7.2</p>
+                <p class="year">2024</p>
+            </div>
+
+            <div class="list-item">
+                <img src="img/dune.jpg" alt="dune" class="list-img">
+                <h2 class="heading">Dune: Part Two</h2>
+                <h3 class="genre">Fiction</h3>
+                <p class="sinopsis">After the events of the first part on the planet Arrakis, young Paul Atreides joins the Fremen tribe and begins a spiritual and martial journey to become a messiah, while trying to avoid the horrible but inevitable future he has witnessed: a Holy War in his name, which spreads across the known universe...</p>
+                <p class="rating">7.7</p>
+                <p class="year">2024</p>
+            </div>
+  
+            <div class="list-item">
+                <img src="img/la_sustancia.jpg" alt="la_sustancia" class="list-img">
+                <h2 class="heading">The substance</h2>
+                <h3 class="genre">Fiction</h3>
+                <p class="sinopsis">You, but better in every way'. That's the promise, a revolutionary product based on cell division, creating a younger, more beautiful, more perfect alter ego.</p>
+                <p class="rating">6.9</p>
+                <p class="year">2024</p>
+            </div>
+
+            <div class="list-item">
+                <img src="img/deadpool_and_wolverine.jpg" alt="deadpool_and_wolverine" class="list-img">
+                <h2 class="heading">Deadpool & Wolverine</h2>
+                <h3 class="genre">Action</h3>
+                <p class="sinopsis">An apathetic Wade Wilson strives for civilian life after leaving behind his days as Deadpool, a morally flexible mercenary. But when his home world faces an existential threat, Wade must reluctantly re-clothe himself with an even more reluctant Wolverine.</p>
+                <p class="rating">6.7</p>
+                <p class="year">2024</p>
+            </div>
+
+            <div class="list-item">
+                <img src="img/mufasa.jpg" alt="mufasa" class="list-img">
+                <h2 class="heading">Mufasa:The lion king</h2>
+                <h3 class="genre">Animation</h3>
+                <p class="sinopsis">Rafiki, Timon and Pumba tell Kiara the story of Mufasa, her grandfather, through flashbacks. The story reveals that Mufasa was an orphaned cub until he met Taka, a kindly lion and heir to a royal line. Together, they embark on an adventure with a group of misfits in search of their destiny, facing a dangerous enemy that will test their bonds.</p>
+                <p class="rating">6.3</p>
+                <p class="year">2024</p>
+            </div>
+            <div class="list-item">
+                <img src="img/den_of_thieves_2_pantera.jpg" alt="den_of_thieves_2_pantera" class="list-img">
+                <h2 class="heading">Den of thieves 2: pantera</h2>
+                <h3 class="genre">Thriller</h3>
+                <p class="sinopsis">Donnie teams up with the Panther mob to pull off the biggest diamond heist ever seen. Meanwhile, Nick, the cop who has gone after him in the past, is broke and tired of being the hunter, so he proposes to join his gang and pull off the heist together. If this challenge succeeds, they will have pulled off the biggest heist in history.</p>
+                <p class="rating">5.7</p>
+                <p class="year">2025</p>
+            </div>
+            <div class="list-item">
+                <img src="img/attack-on-titan.jpg" alt="attack-on-titan" class="list-img">
+                <h2 class="heading">Attack on Titan: The Last Attack</h2>
+                <h3 class="genre">Animation</h3>
+                <p class="sinopsis">Eren Yeager lives in a city that is protected by giant walls that protect its citizens from the Titans, huge creatures whose sole purpose is to devour people. However, things take an unexpected turn when two titans, the Colossal and the Battleship, break through the walls and enter the city. Eren's mother is eaten in front of him, a moment that makes him decide that he will extinguish all the titans in the world no matter what the cost.</p>
+                <p class="rating">7.7</p>
+                <p class="year">2025</p>
+            </div>
+            <div class="list-item">
+                <img src="img/spider-man-no-way-home.jpg" alt="spider-man-no-way-home" class="list-img">
+                <h2 class="heading">Spider-Man: No Way Home</h2>
+                <h3 class="genre">Fantasy</h3>
+                <p class="sinopsis">For the first time in Spider-Man's cinematic history, our hero, neighbour and friend is unmasked, and thus no longer able to separate his normal life from the enormous risks that come with being a superhero. When he asks Doctor Strange for help, the risks become even more dangerous, forcing him to discover what it really means to be him. Sequel to ‘Spider-Man: Far From Home’.</p>
+                <p class="rating">7.0</p>
+                <p class="year">2021</p>
+            </div>
+            <div class="list-item">
+                <img src="img/super-mario-bros.jpg" alt="super-mario-bros" class="list-img">
+                <h2 class="heading">The Super Mario Bros. Movie</h2>
+                <h3 class="genre">Animation</h3>
+                <p class="sinopsis">While working on an underground malfunction, Brooklyn plumbers Mario and his brother Luigi travel through a mysterious pipe to a magical new world. But when the brothers get separated, Mario must embark on an epic quest to find Luigi. With the help of the local mushroom Toad and a few combat notions from the Mushroom Kingdom's warrior leader, Princess Peach, Mario discovers the power within himself.</p>
+                <p class="rating">6.6</p>
+                <p class="year">2023</p>
+            </div>
+
+            <div class="list-item">
+                <img src="img/bravenewworld.jpg" alt="bravenewworld" class="list-img">
+                <h2 class="heading">Captain America: Brave New World</h2>
+                <h3 class="genre">Action</h3>
+                <p class="sinopsis">After meeting with newly elected US President Thaddeus Ross (Harrison Ford), Sam finds himself in the middle of an international incident. He must uncover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.</p>
+                <p class="rating"><i class="fa-solid fa-hourglass-start"></i></p>
+                <p class="year">2025</p>
+            </div>
+            
+            <div class="list-item">
+                <img src="img/flight_risk.jpg" alt="flight_risk" class="list-img">
+                <h2 class="heading">Flight Risk</h2>
+                <h3 class="genre">Thriller</h3>
+                <p class="sinopsis">A pilot (Mark Wahlberg) transports a lieutenant general (Michelle Dockery) in his small plane, who is guarding a witness (Topher Grace) who is to testify in a mob trial. As they cross the Alaskan mountains, tensions run high, as not everyone on board is who they appear to be. And at 10,000 feet there is no escape.</p>
+                <p class="rating"><i class="fa-solid fa-hourglass-start"></i></p>
+                <p class="year">2025</p>
+            </div>
+            
+            <div class="list-item">
+                <img src="img/sinners.jpg" alt="sinners" class="list-img">
+                <h2 class="heading">Sinners</h2>
+                <h3 class="genre">Terror</h3>
+                <p class="sinopsis">Trying to put their troubled lives behind them, twin brothers (Jordan) return to their hometown for a fresh start, only to discover that an even greater evil is waiting to greet them.</p>
+                <p class="rating"><i class="fa-solid fa-hourglass-start"></i></p>
+                <p class="year">2025</p>
+                </div>
+            
+            <div class="list-item">
+                <img src="img/mikaela.jpg" alt="mikaela" class="list-img">
+                <h2 class="heading">Mikaela</h2>
+                <h3 class="genre">Thriller</h3>
+                <p class="sinopsis">On the eve of Epiphany, an unprecedented snowstorm ravages Spain. Amidst the chaos of a collapsed motorway, a group of robbers seize the opportunity to hold up an armoured car. Just a few metres away is Leo (Antonio Resines), a cop on his last legs who has nothing to lose. With the unexpected help of a young woman (Natalia Azahara), they try to prevent the gang from escaping with the loot in a chase against the clock in the middle of the storm.</p>   
+                <p class="rating">5.1</p>
+                <p class="year">2025</p>
+            </div>
+            
+            <div class="list-item">
+                <img src="img/red_notice.jpg" alt="red_notice" class="list-img">
+                <h2 class="heading">Red Notice</h2>
+                <h3 class="genre">Comedy</h3>
+                <p class="sinopsis">When Interpol sends out a "Red Alert", it means that police departments around the world must be on the alert to catch the most wanted criminals. Alarm bells go off when a daring robbery unites the FBI's top agent (Dwayne Johnson) with two rival criminals (Gal Gadot and Ryan Reynolds). A coincidence that will cause the unpredictable to happen.</p>    
+                <p class="rating">5.3</p>
+                <p class="year">2021</p>
+            </div>
+            
+            <div class="list-item">
+                <img src="img/aquaman.jpg" alt="aquaman" class="list-img">
+                <h2 class="heading">Aquaman: And the lost kingdom</h2>
+                <h3 class="genre">Adventure</h3>
+                <p class="sinopsis">After failing to defeat Aquaman, Black Manta, driven by revenge for the death of his father, seeks to defeat him once and for all. This time, Black Manta is more powerful than ever, wielding the mythical Black Trident, which unleashes an evil force. Aquaman must form an unexpected alliance with his brother Orm, the former king of Atlantis, to save his kingdom, his family and the world from total destruction.</p>    
+                <p class="rating">4.8</p>
+                <p class="year">2023</p>
+            </div>
+            
+            <div class="list-item">
+                <img src="img/army.jpg" alt="army" class="list-img">
+                <h2 class="heading">Army of the dead</h2>
+                <h3 class="genre">Terror</h3>
+                <p class="sinopsis">A group of mercenaries decide to carry out the biggest heist ever carried out in the city of Las Vegas just after an epidemic of the living dead breaks out. To do so, they will have to enter a quarantine zone, with all the risks that this entails. </p>    
+                <p class="rating">4.9</i></p>
+                <p class="year">2021</p>
+            </div>
+
+            <div class="list-item">
+                <img src="img/adu.jpg" alt="adu" class="list-img">
+                <h2 class="heading">Adu</h2>
+                <h3 class="genre">Drama</h3>
+                <p class="sinopsis">A boy and his sister try to sneak onto a plane in Cameroon to reach Europe, while an activist fights poaching and faces family problems. At the same time, in Melilla, a group of civil guards prepare for a confrontation with sub-Saharan immigrants trying to cross the fence. Three stories intertwined by the theme of the struggle for survival, whose lives will change forever.</p>    
+                <p class="rating">6.2</i></p>
+                <p class="year">2020</p>
+            </div>
+
+            <div class="results" id="results"></div>    
+        </div> 
+        </section>
+       
+        <div class="page">
+            <ul class="movie-list" id="movie-list"></ul>
+            <div class="buttons">
+                <button id="prevPage"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="page1" class="page-button">1</button>
+                <button id="page2" class="page-button">2</button>
+                <button id="page3" class="page-button">3</button>
+                <button id="page4" class="page-button">4</button>
+                <button id="page5" class="page-button">5</button>
+                <button id="nextPage"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+         
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-end">
+                <img src="imagenes/logofilmax.png" alt="" class="logo" />
+                <p>ThemeREX © 2024. All rights reserved.</p>
+            </div>
+            <div class="movies">
+                <h3>Movies</h3>
+                <ul>
+                    <li><a href="">Film News</a></li>
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Coming soon</a></li>
+                    <li><a href="">Most Populat</a></li>
+                    <li><a href="">Top Trailers</a></li>
+                </ul>
+            </div>
+            <div class="additional">
+                <h3>Additional links</h3>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Service Plus</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <ul>
+                    <li><a href="">Newsletter sign up</a></li>
+                </ul>
+            <div class="icons-end">
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2FCodeSpaceAcade" title="X">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"><g fill="#49e5ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#fefefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M2.36719,3l7.0957,10.14063l-6.72266,7.85938h2.64063l5.26367,-6.16992l4.31641,6.16992h6.91016l-7.42187,-10.625l6.29102,-7.375h-2.59961l-4.86914,5.6875l-3.97266,-5.6875zM6.20703,5h2.04883l9.77734,14h-2.03125z"></path></g></g>
+                        </svg>
+                    </a>    
+                    <a href="https://www.facebook.com/Codespaceacademy" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"><g fill="#1209eb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#fefefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M17.525,9h-3.525v-2c0,-1.032 0.084,-1.682 1.563,-1.682h1.868v-3.18c-0.909,-0.094 -1.823,-0.14 -2.738,-0.138c-2.713,0 -4.693,1.657 -4.693,4.699v2.301h-3v4l3,-0.001v9.001h4v-9.003l3.066,-0.001z"></path></g></g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/codespaceacademy/" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"><g fill="#f010e9" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#eeeeee" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(9.84615,9.84615)"><path d="M7.54688,0c-4.15625,0 -7.54687,3.39063 -7.54687,7.54688v10.90625c0,4.15625 3.39063,7.54688 7.54688,7.54688h10.90625c4.15625,0 7.54688,-3.39062 7.54688,-7.54687v-10.90625c0,-4.15625 -3.39062,-7.54687 -7.54687,-7.54687zM7.54688,2h10.90625c3.07422,0 5.54688,2.46875 5.54688,5.54688v10.90625c0,3.07422 -2.46875,5.54688 -5.54687,5.54688h-10.90625c-3.07422,0 -5.54687,-2.46875 -5.54687,-5.54687v-10.90625c0,-3.07422 2.46875,-5.54687 5.54688,-5.54687zM20.5,4c-0.82812,0 -1.5,0.67188 -1.5,1.5c0,0.82813 0.67188,1.5 1.5,1.5c0.82813,0 1.5,-0.67187 1.5,-1.5c0,-0.82812 -0.67187,-1.5 -1.5,-1.5zM13,6c-3.85547,0 -7,3.14453 -7,7c0,3.85547 3.14453,7 7,7c3.85547,0 7,-3.14453 7,-7c0,-3.85547 -3.14453,-7 -7,-7zM13,8c2.77344,0 5,2.22656 5,5c0,2.77344 -2.22656,5 -5,5c-2.77344,0 -5,-2.22656 -5,-5c0,-2.77344 2.22656,-5 5,-5z"></path></g></g>
+                        </svg>
+                    </a>    
+                    <a href="https://www.youtube.com/channel/UCShIfwOX_JfziVBJoSM6zMQ" title="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"><g fill="#f20000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#dbdbdb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M5.67969,2l1.47852,5.34375v2.5625h1.28125v-2.5625l1.49805,-5.34375h-1.29102l-0.53711,2.43164c-0.151,0.71 -0.24702,1.21463 -0.29102,1.51563h-0.03906c-0.063,-0.421 -0.15902,-0.92939 -0.29102,-1.52539l-0.51758,-2.42187zM11.43164,4.01758c-0.434,0 -0.78378,0.08481 -1.05078,0.25781c-0.267,0.172 -0.46384,0.44722 -0.58984,0.82422c-0.125,0.377 -0.1875,0.87605 -0.1875,1.49805v0.83984c0,0.615 0.05406,1.10752 0.16406,1.47852c0.11,0.371 0.29564,0.64431 0.55664,0.82031c0.261,0.176 0.62012,0.26367 1.07813,0.26367c0.446,0 0.80055,-0.08677 1.06055,-0.25977c0.26,-0.173 0.44845,-0.44436 0.56445,-0.81836c0.116,-0.374 0.17383,-0.86838 0.17383,-1.48437v-0.83984c0,-0.621 -0.05874,-1.11819 -0.17773,-1.49219c-0.119,-0.373 -0.30841,-0.64822 -0.56641,-0.82422c-0.258,-0.176 -0.59839,-0.26367 -1.02539,-0.26367zM13.87891,4.13086v4.31445c0,0.534 0.08948,0.92673 0.27149,1.17773c0.182,0.251 0.46466,0.37695 0.84766,0.37695c0.552,0 0.96814,-0.26678 1.24414,-0.80078h0.02734l0.11328,0.70703h1.01758v-5.77539h-1.29883v4.58789c-0.05,0.107 -0.12647,0.19467 -0.23047,0.26367c-0.104,0.07 -0.21122,0.10352 -0.32422,0.10352c-0.132,0 -0.2262,-0.05406 -0.2832,-0.16406c-0.057,-0.11 -0.08594,-0.29473 -0.08594,-0.55273v-4.23828zM11.40234,4.91211c0.182,0 0.31081,0.09511 0.38281,0.28711c0.072,0.191 0.10742,0.49516 0.10742,0.91016v1.79883c0,0.427 -0.03542,0.73583 -0.10742,0.92383c-0.072,0.188 -0.19986,0.2822 -0.38086,0.2832c-0.182,0 -0.30795,-0.0952 -0.37695,-0.2832c-0.07,-0.188 -0.10352,-0.49683 -0.10352,-0.92383v-1.79883c0,-0.414 0.03542,-0.71816 0.10742,-0.91016c0.072,-0.191 0.19509,-0.28711 0.37109,-0.28711zM5,11c-1.1,0 -2,0.9 -2,2v7c0,1.1 0.9,2 2,2h14c1.1,0 2,-0.9 2,-2v-7c0,-1.1 -0.9,-2 -2,-2zM12.04883,13h1.05664v2.56836h0.00781c0.095,-0.186 0.23125,-0.33522 0.40625,-0.44922c0.175,-0.114 0.36441,-0.16992 0.56641,-0.16992c0.26,0 0.46333,0.06903 0.61133,0.20703c0.148,0.138 0.25626,0.36097 0.32226,0.66797c0.066,0.308 0.09766,0.73525 0.09766,1.28125v0.77148h0.00195c0,0.727 -0.08867,1.25956 -0.26367,1.60156c-0.175,0.342 -0.44736,0.51367 -0.81836,0.51367c-0.207,0 -0.39445,-0.04758 -0.56445,-0.14258c-0.17,-0.095 -0.29781,-0.22563 -0.38281,-0.39062h-0.02344l-0.11133,0.46094h-0.90625zM5.48633,13.24609h3.25195v0.88476h-1.08984v5.78906h-1.07227v-5.78906h-1.08984zM17.09766,14.95117c0.376,0 0.66519,0.06903 0.86719,0.20703c0.201,0.138 0.34278,0.35353 0.42578,0.64453c0.082,0.292 0.12305,0.69499 0.12305,1.20899v0.83594h-1.83594v0.24805c0,0.313 0.00834,0.54713 0.02734,0.70313c0.019,0.156 0.05723,0.2708 0.11523,0.3418c0.058,0.072 0.14753,0.10742 0.26953,0.10742c0.164,0 0.27689,-0.06441 0.33789,-0.19141c0.061,-0.127 0.09461,-0.33777 0.09961,-0.63477l0.94727,0.05469c0.005,0.042 0.00781,0.10178 0.00781,0.17578c0,0.451 -0.12409,0.78777 -0.37109,1.00977c-0.247,0.223 -0.59392,0.33398 -1.04492,0.33398c-0.541,0 -0.92067,-0.17077 -1.13867,-0.50977c-0.218,-0.339 -0.32617,-0.86322 -0.32617,-1.57422v-0.85156c0,-0.732 0.11289,-1.26652 0.33789,-1.60352c0.225,-0.337 0.6122,-0.50586 1.1582,-0.50586zM8.41016,15.04492h1.09961v3.58008c0,0.217 0.02427,0.37284 0.07227,0.46484c0.048,0.093 0.12628,0.13867 0.23828,0.13867c0.095,0 0.18839,-0.02889 0.27539,-0.08789c0.088,-0.058 0.15036,-0.13266 0.19336,-0.22266v-3.87305h1.09961v4.875h-0.00195h-0.85937l-0.09375,-0.59766h-0.02539c-0.234,0.452 -0.58378,0.67773 -1.05078,0.67773c-0.324,0 -0.56084,-0.10636 -0.71484,-0.31836c-0.154,-0.212 -0.23242,-0.54414 -0.23242,-0.99414zM17.07422,15.69336c-0.117,0 -0.20377,0.03552 -0.25977,0.10352c-0.056,0.069 -0.09333,0.18189 -0.11133,0.33789c-0.019,0.156 -0.02734,0.39294 -0.02734,0.71094v0.34961h0.80273v-0.34961c0,-0.313 -0.01025,-0.54894 -0.03125,-0.71094c-0.02,-0.162 -0.05923,-0.2758 -0.11523,-0.3418c-0.056,-0.066 -0.14081,-0.09961 -0.25781,-0.09961zM13.5918,15.72852c-0.106,0 -0.20297,0.04195 -0.29297,0.12695c-0.09,0.085 -0.15441,0.19417 -0.19141,0.32617v2.76758c0.048,0.085 0.1105,0.14841 0.1875,0.19141c0.077,0.042 0.159,0.06445 0.25,0.06445c0.117,0 0.20834,-0.04195 0.27734,-0.12695c0.069,-0.085 0.11944,-0.22769 0.14844,-0.42969c0.029,-0.201 0.04297,-0.48094 0.04297,-0.83594v-0.62695c0,-0.382 -0.01116,-0.67581 -0.03516,-0.88281c-0.024,-0.207 -0.06695,-0.35636 -0.12695,-0.44336c-0.061,-0.087 -0.14776,-0.13086 -0.25976,-0.13086z"></path></g></g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+<script src="lista.js"></script>
+</html>e
